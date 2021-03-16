@@ -10,8 +10,7 @@ import Combine
 
 final class CityAirQualityVM: ObservableObject {
     
-    //@Published var airQuality = CityAirQuality(status: "dupa")
-    @Published var airQuality = CityAirQuality(status: "", data: CityAirQuality.CityData(city: "", state: "", country: ""))
+    @Published var airQuality: CityAirQuality?
     var cancellationToken: AnyCancellable?
     
     init() {

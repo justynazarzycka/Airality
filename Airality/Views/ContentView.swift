@@ -12,8 +12,12 @@ struct ContentView: View {
     
     
     var body: some View {
-        Text(viewModel.airQuality.data.city)
-            .padding()
+
+        if let airQualityData = viewModel.airQuality {
+            Text(airQualityData.airQualityLevel.rawValue)
+        } else {
+            Text("loading")
+        }
     }
 }
 

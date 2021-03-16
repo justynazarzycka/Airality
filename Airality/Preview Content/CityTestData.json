@@ -1,0 +1,33 @@
+{
+    "status": "success",
+    "data": {
+        "city": "Borowiec",
+        "state": "Greater Poland",
+        "country": "Poland",
+        "location": {
+            "type": "Point",
+            "coordinates": [
+                17.0732,
+                52.2768
+            ]
+        },
+        "current": {
+            "weather": {
+                "ts": "2021-03-16T08:00:00.000Z",
+                "tp": 5,
+                "pr": 1011,
+                "hu": 93,
+                "ws": 1.54,
+                "wd": 320,
+                "ic": "02d"
+            },
+            "pollution": {
+                "ts": "2021-03-16T07:00:00.000Z",
+                "aqius": 70,
+                "mainus": "p2",
+                "aqicn": 30,
+                "maincn": "p2"
+            }
+        }
+    }
+}
