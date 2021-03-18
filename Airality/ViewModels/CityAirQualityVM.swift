@@ -10,7 +10,7 @@ import Combine
 
 final class CityAirQualityVM: ObservableObject {
     
-    @Published var airQuality: CityAirQuality?
+    @Published var cityData: CityAirQuality?
     var cancellationToken: AnyCancellable?
     
     init() {
@@ -29,7 +29,7 @@ extension CityAirQualityVM {
             })
             .sink(receiveCompletion: { _ in },
                   receiveValue: {
-                    self.airQuality = $0
+                    self.cityData = $0
                   })
     }
 }

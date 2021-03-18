@@ -8,16 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel = CityAirQualityVM()
-    
-    
+   
     var body: some View {
-
-        if let airQualityData = viewModel.airQuality {
-            Text(airQualityData.airQualityLevel.rawValue)
-        } else {
-            Text("loading")
-        }
+        CityAirQualityView()
     }
 }
 

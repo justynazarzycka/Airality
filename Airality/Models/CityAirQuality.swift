@@ -8,7 +8,7 @@
 import Foundation
 
 struct CityAirQuality: Codable {
-    var status: String
+    //var status: String
     var data: Data
     var airQualityLevel: AirQualityLevel {
         switch data.current.pollution.aqius {
@@ -61,10 +61,7 @@ struct CityAirQuality: Codable {
     }
     
     struct PollutionData: Codable {
-        var aqius: Int
-        var mainus: String
-        var aqicn: Int
-        var maincn: String
+        var aqius: Int //AQI value based on US EPA standard
     }
     
     // levels based on www.airnow.gov
