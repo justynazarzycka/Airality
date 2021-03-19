@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct CityAirQuality: Codable {
     //var status: String
@@ -65,13 +66,32 @@ struct CityAirQuality: Codable {
     }
     
     // levels based on www.airnow.gov
-    enum AirQualityLevel: String {
-        case good = "Good"
-        case moderate = "Moderate"
-        case unhealthyForSensitiveGroups = "Unhealthy for Sensitive Groups"
-        case unhealthy = "Unhealthy"
-        case veryUnhealthy = "Very Unhealty"
-        case hazardous = "Hazardous"
+    enum AirQualityLevel {
+        case good
+        case moderate
+        case unhealthyForSensitiveGroups
+        case unhealthy
+        case veryUnhealthy
+        case hazardous
         case unknown
+        
+        var info: (description: String, color: Color) {
+            switch self {
+            case .good:
+                return ("Good", .green)
+            case .moderate:
+                return ("Moderate", .yellow)
+            case .unhealthyForSensitiveGroups:
+                return ("Unhealthy for Sensitive Groups", .orange)
+            case .unhealthy:
+                return ("Unhealthy", .red)
+            case .veryUnhealthy:
+                return ("Very Unhealty", .purple)
+            case .hazardous:
+                return ("Hazardous", Color("Maroon"))
+            default:
+                return ("", .gray)
+            }
+        }
     }
 }

@@ -15,8 +15,8 @@ struct CityAirQualityView: View {
 
         if let cityData = viewModel.cityData {
             VStack {
-                
-                Text(cityData.airQualityLevel.rawValue)
+                Text(cityData.airQualityLevel.info.description)
+                    
             }
         } else {
             Text("loading")
