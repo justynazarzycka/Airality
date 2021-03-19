@@ -20,7 +20,6 @@
 		6798E8EA2600BBB300A47E50 /* CityTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6798E8E92600BBB300A47E50 /* CityTestData.json */; };
 		67C813FF26035F0D0036A474 /* AirQualityChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C813FE26035F0D0036A474 /* AirQualityChart.swift */; };
 		67C8140226037F490036A474 /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8140126037F490036A474 /* Arc.swift */; };
-		67E03E7D2603E30800222F70 /* MyLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E03E7C2603E30800222F70 /* MyLines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		6798E8E92600BBB300A47E50 /* CityTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CityTestData.json; sourceTree = "<group>"; };
 		67C813FE26035F0D0036A474 /* AirQualityChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityChart.swift; sourceTree = "<group>"; };
 		67C8140126037F490036A474 /* Arc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arc.swift; sourceTree = "<group>"; };
-		67E03E7C2603E30800222F70 /* MyLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +132,6 @@
 			children = (
 				676B64D326024375002C73DD /* CityAirQualityView.swift */,
 				67C813FE26035F0D0036A474 /* AirQualityChart.swift */,
-				67E03E7C2603E30800222F70 /* MyLines.swift */,
 			);
 			path = CityAirQuality;
 			sourceTree = "<group>";
@@ -222,7 +219,6 @@
 				6764859725FF4D4C0024F049 /* ContentView.swift in Sources */,
 				676485A725FF56820024F049 /* CityAirQuality.swift in Sources */,
 				676B64D426024375002C73DD /* CityAirQualityView.swift in Sources */,
-				67E03E7D2603E30800222F70 /* MyLines.swift in Sources */,
 				676485D325FFEC200024F049 /* AriVisualAPI.swift in Sources */,
 				676485CE25FFE5830024F049 /* CityAirQualityVM.swift in Sources */,
 				676B64D726025270002C73DD /* CityTextData.swift in Sources */,
