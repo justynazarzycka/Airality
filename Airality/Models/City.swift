@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct CityAirQuality: Codable {
+struct City: Codable {
     //var status: String
     var data: Data
     var airQualityLevel: AirQualityLevel {
@@ -31,13 +31,21 @@ struct CityAirQuality: Codable {
     }
     
     struct Data: Codable {
-        var city: String
+        var name: String
+        var state: String
+        var country: String
+        var location: Location
         var current: CurrentData
+        
+        enum CodingKeys: String, CodingKey {
+            case name = "city"
+            case state, country, location, current
+        }
     }
     
-    struct currentData: Codable {
-        var weather: WeatherData
-        var pollution: PollutionData
+    struct Location: Codable {
+        var type: String
+        var coordinates: [Double]
     }
     
     struct CurrentData: Codable {
@@ -51,6 +59,7 @@ struct CityAirQuality: Codable {
         var humidity: Int
         var windSpeed: Double
         var windDirection: Int
+        var icon: String
         
         enum CodingKeys: String, CodingKey {
             case temperature = "tp"
@@ -58,6 +67,7 @@ struct CityAirQuality: Codable {
             case humidity = "hu"
             case windSpeed = "ws"
             case windDirection = "wd"
+            case icon = "ic"
         }
     }
     

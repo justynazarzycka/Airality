@@ -8,9 +8,9 @@
 import Foundation
 import Combine
 
-final class CityAirQualityVM: ObservableObject {
+final class CityVM: ObservableObject {
     
-    @Published var cityData: CityAirQuality?
+    @Published var cityData: City?
     var cancellationToken: AnyCancellable?
     
     init() {
@@ -19,7 +19,7 @@ final class CityAirQualityVM: ObservableObject {
     }
 }
 
-extension CityAirQualityVM {
+extension CityVM {
     
     func getData() {
         cancellationToken = AirVisualApi.request(.nearestCityToIP)

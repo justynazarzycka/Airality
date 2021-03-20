@@ -7,8 +7,8 @@
 
 import Foundation
 
-extension CityAirQuality {
-    static var cityTestData: CityAirQuality = load("cityTestData.json")
+extension City {
+    static var testData: City = load("CityTestData.json")
 }
 
 

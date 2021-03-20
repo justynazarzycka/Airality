@@ -33,7 +33,6 @@ struct AirQualityChart: View {
                     self.animatedPercantage = 1.0 // activates animation from 0 to the end
                 }
         }
-        .padding()
     }
 }
 
