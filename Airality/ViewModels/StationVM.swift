@@ -8,9 +8,9 @@
 import Foundation
 import Combine
 
-final class CityVM: ObservableObject {
+final class StationVM: ObservableObject {
     
-    @Published var cityData: City?
+    @Published var stationData: Station?
     var cancellationToken: AnyCancellable?
     
     init() {
@@ -19,7 +19,7 @@ final class CityVM: ObservableObject {
     }
 }
 
-extension CityVM {
+extension StationVM {
     
     func getData() {
         cancellationToken = AirVisualApi.request(.nearestCityToIP)
@@ -29,7 +29,7 @@ extension CityVM {
             })
             .sink(receiveCompletion: { _ in },
                   receiveValue: {
-                    self.cityData = $0
+                    self.stationData = $0
                   })
     }
 }

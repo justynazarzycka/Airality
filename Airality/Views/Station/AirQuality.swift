@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct AirQuality: View {
-    var city: City
+    var station: Station
     
     var body: some View {
         ZStack {
@@ -17,10 +17,10 @@ struct AirQuality: View {
             HStack {
                 
                 VStack(alignment: .leading) {
-                    Text(city.data.name)
+                    Text(station.data.name)
                         .modifier(FitToWidth(maximumFontSize: 35))
-                    Text(city.data.state)
-                    Text(city.data.country)
+                    Text(station.data.state)
+                    Text(station.data.country)
                 }
                 .padding()
                 .frame(width: 180, height: 230)
@@ -28,17 +28,17 @@ struct AirQuality: View {
                 
                 VStack {
                     ZStack {
-                        AirQualityChart(aqi: city.data.current.pollution.aqius, color: city.airQualityLevel.info.color)
+                        AirQualityChart(aqi: station.data.current.pollution.aqius, color: station.airQualityLevel.info.color)
                             
                         
                         VStack {
-                            Text(String(city.data.current.pollution.aqius))
+                            Text(String(station.data.current.pollution.aqius))
                                 .font(.system(size: 30))
                             Text("AQI")
                         }
                     }
                     .offset(y: 15)
-                    Text(city.airQualityLevel.info.description)
+                    Text(station.airQualityLevel.info.description)
                         .padding()
                         .offset(y:-10)
                         .modifier(FitToWidth(maximumFontSize: 30))
@@ -51,6 +51,6 @@ struct AirQuality: View {
 
 struct AirQuality_Previews: PreviewProvider {
     static var previews: some View {
-        AirQuality(city: City.testData)
+        AirQuality(station: Station.testData)
     }
 }

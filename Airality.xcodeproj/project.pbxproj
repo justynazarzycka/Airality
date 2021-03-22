@@ -15,13 +15,15 @@
 		6764859725FF4D4C0024F049 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764859625FF4D4C0024F049 /* ContentView.swift */; };
 		6764859925FF4D4C0024F049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6764859825FF4D4C0024F049 /* Assets.xcassets */; };
 		6764859C25FF4D4C0024F049 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6764859B25FF4D4C0024F049 /* Preview Assets.xcassets */; };
-		676485A725FF56820024F049 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676485A625FF56820024F049 /* City.swift */; };
-		676485CE25FFE5830024F049 /* CityVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676485CD25FFE5830024F049 /* CityVM.swift */; };
+		676485A725FF56820024F049 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676485A625FF56820024F049 /* Station.swift */; };
+		676485CE25FFE5830024F049 /* StationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676485CD25FFE5830024F049 /* StationVM.swift */; };
 		676485D325FFEC200024F049 /* AriVisualAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676485D225FFEC200024F049 /* AriVisualAPI.swift */; };
 		676485D825FFEF640024F049 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676485D725FFEF640024F049 /* ApiClient.swift */; };
-		676B64D426024375002C73DD /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B64D326024375002C73DD /* CityView.swift */; };
 		676B64D726025270002C73DD /* CityTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676B64D626025270002C73DD /* CityTestData.swift */; };
-		6798E8EA2600BBB300A47E50 /* CityTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6798E8E92600BBB300A47E50 /* CityTestData.json */; };
+		676BC15F2608F5E100B26036 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BC15E2608F5E100B26036 /* MapView.swift */; };
+		676BC1622608F65E00B26036 /* StationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BC1612608F65E00B26036 /* StationMapView.swift */; };
+		676BC1702609091100B26036 /* StationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BC16F2609091100B26036 /* StationView.swift */; };
+		6798E8EA2600BBB300A47E50 /* stationTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6798E8E92600BBB300A47E50 /* stationTestData.json */; };
 		67C813FF26035F0D0036A474 /* AirQualityChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C813FE26035F0D0036A474 /* AirQualityChart.swift */; };
 		67C8140226037F490036A474 /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C8140126037F490036A474 /* Arc.swift */; };
 /* End PBXBuildFile section */
@@ -37,13 +39,15 @@
 		6764859825FF4D4C0024F049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6764859B25FF4D4C0024F049 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6764859D25FF4D4C0024F049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		676485A625FF56820024F049 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		676485CD25FFE5830024F049 /* CityVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVM.swift; sourceTree = "<group>"; };
+		676485A625FF56820024F049 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		676485CD25FFE5830024F049 /* StationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationVM.swift; sourceTree = "<group>"; };
 		676485D225FFEC200024F049 /* AriVisualAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AriVisualAPI.swift; sourceTree = "<group>"; };
 		676485D725FFEF640024F049 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		676B64D326024375002C73DD /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 		676B64D626025270002C73DD /* CityTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTestData.swift; sourceTree = "<group>"; };
-		6798E8E92600BBB300A47E50 /* CityTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CityTestData.json; sourceTree = "<group>"; };
+		676BC15E2608F5E100B26036 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		676BC1612608F65E00B26036 /* StationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapView.swift; sourceTree = "<group>"; };
+		676BC16F2609091100B26036 /* StationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationView.swift; sourceTree = "<group>"; };
+		6798E8E92600BBB300A47E50 /* stationTestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stationTestData.json; sourceTree = "<group>"; };
 		67C813FE26035F0D0036A474 /* AirQualityChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityChart.swift; sourceTree = "<group>"; };
 		67C8140126037F490036A474 /* Arc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +99,7 @@
 			children = (
 				6764859B25FF4D4C0024F049 /* Preview Assets.xcassets */,
 				676B64D626025270002C73DD /* CityTestData.swift */,
-				6798E8E92600BBB300A47E50 /* CityTestData.json */,
+				6798E8E92600BBB300A47E50 /* stationTestData.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -103,7 +107,7 @@
 		676485A425FF4E690024F049 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				676485A625FF56820024F049 /* City.swift */,
+				676485A625FF56820024F049 /* Station.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -113,7 +117,7 @@
 			children = (
 				6764859625FF4D4C0024F049 /* ContentView.swift */,
 				67E03E7A2603DC3C00222F70 /* Helpers */,
-				676B64D12602433A002C73DD /* CityAirQuality */,
+				676B64D12602433A002C73DD /* Station */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,7 +125,7 @@
 		676485CC25FFE5020024F049 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				676485CD25FFE5830024F049 /* CityVM.swift */,
+				676485CD25FFE5830024F049 /* StationVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -135,15 +139,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		676B64D12602433A002C73DD /* CityAirQuality */ = {
+		676B64D12602433A002C73DD /* Station */ = {
 			isa = PBXGroup;
 			children = (
-				676B64D326024375002C73DD /* CityView.swift */,
+				676BC16F2609091100B26036 /* StationView.swift */,
 				6740B3A22604945E003EBFAA /* AirQuality.swift */,
 				67C813FE26035F0D0036A474 /* AirQualityChart.swift */,
 				671EE31B2606885C003DA361 /* Weather.swift */,
+				676BC1612608F65E00B26036 /* StationMapView.swift */,
 			);
-			path = CityAirQuality;
+			path = Station;
 			sourceTree = "<group>";
 		};
 		67E03E7A2603DC3C00222F70 /* Helpers */ = {
@@ -152,6 +157,7 @@
 				67C8140126037F490036A474 /* Arc.swift */,
 				6740B3AB2604B1EF003EBFAA /* RectangleBackground.swift */,
 				671EE318260684B2003DA361 /* FitToWidth.swift */,
+				676BC15E2608F5E100B26036 /* MapView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -215,7 +221,7 @@
 			files = (
 				6764859C25FF4D4C0024F049 /* Preview Assets.xcassets in Resources */,
 				6764859925FF4D4C0024F049 /* Assets.xcassets in Resources */,
-				6798E8EA2600BBB300A47E50 /* CityTestData.json in Resources */,
+				6798E8EA2600BBB300A47E50 /* stationTestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,15 +233,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C8140226037F490036A474 /* Arc.swift in Sources */,
+				676BC1622608F65E00B26036 /* StationMapView.swift in Sources */,
 				67C813FF26035F0D0036A474 /* AirQualityChart.swift in Sources */,
 				6764859725FF4D4C0024F049 /* ContentView.swift in Sources */,
-				676485A725FF56820024F049 /* City.swift in Sources */,
-				676B64D426024375002C73DD /* CityView.swift in Sources */,
+				676485A725FF56820024F049 /* Station.swift in Sources */,
 				676485D325FFEC200024F049 /* AriVisualAPI.swift in Sources */,
 				671EE31C2606885C003DA361 /* Weather.swift in Sources */,
-				676485CE25FFE5830024F049 /* CityVM.swift in Sources */,
+				676485CE25FFE5830024F049 /* StationVM.swift in Sources */,
 				671EE319260684B2003DA361 /* FitToWidth.swift in Sources */,
+				676BC1702609091100B26036 /* StationView.swift in Sources */,
 				676B64D726025270002C73DD /* CityTestData.swift in Sources */,
+				676BC15F2608F5E100B26036 /* MapView.swift in Sources */,
 				6764859525FF4D4C0024F049 /* AiralityApp.swift in Sources */,
 				6740B3A32604945E003EBFAA /* AirQuality.swift in Sources */,
 				676485D825FFEF640024F049 /* ApiClient.swift in Sources */,

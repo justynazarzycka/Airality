@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Weather: View {
-    var weather: City.WeatherData
+    var weather: Station.WeatherData
     
     var body: some View {
         
@@ -31,12 +31,15 @@ struct Weather: View {
                     Image(String(weather.icon))
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 60)
-                        .offset(x: 30)
+                        .frame(width: 50)
+                        .offset(x: 30, y: 10)
+                    
+                    Spacer()
+                        .frame(height: 30)
                     
                     weatherRow(imageName: "wind", text: "\(String(weather.windSpeed)) m/s")
                     
-                    weatherRow(imageName: "arrow",imageRotation: -Double(weather.windDirection + 90), text: "\(String(weather.windDirection)) °")
+                    weatherRow(imageName: "arrow",imageRotation: -Double(weather.windDirection + 45), text: "\(String(weather.windDirection)) °")
                 }
             }
         }
@@ -64,6 +67,6 @@ struct weatherRow: View {
 
 struct Weather_Previews: PreviewProvider {
     static var previews: some View {
-        Weather(weather: City.testData.data.current.weather)
+        Weather(weather: Station.testData.data.current.weather)
     }
 }

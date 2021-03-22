@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct City: Codable {
+struct Station: Codable {
     //var status: String
     var data: Data
     var airQualityLevel: AirQualityLevel {

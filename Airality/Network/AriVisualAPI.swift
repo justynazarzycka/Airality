@@ -21,7 +21,7 @@ enum EndPoint: String {
 }
 
 extension AirVisualApi {
-    static func request(_ endPoint: EndPoint) -> AnyPublisher<City, Error> {
+    static func request(_ endPoint: EndPoint) -> AnyPublisher<Station, Error> {
         
         // add end point to URL
         guard var components = URLComponents(url: baseUrl!.appendingPathComponent(endPoint.rawValue), resolvingAgainstBaseURL: true)
