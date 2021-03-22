@@ -16,7 +16,7 @@ struct AirQuality: View {
             RectangleBackground()
             HStack {
                 
-                VStack {
+                VStack(alignment: .leading) {
                     Text(city.data.name)
                         .modifier(FitToWidth(maximumFontSize: 35))
                     Text(city.data.state)
@@ -41,7 +41,7 @@ struct AirQuality: View {
                     Text(city.airQualityLevel.info.description)
                         .padding()
                         .offset(y:-10)
-                        .modifier(FitToWidth(maximumFontSize: 35))
+                        .modifier(FitToWidth(maximumFontSize: 30))
                 }
             }
         }

@@ -40,7 +40,7 @@ struct Weather: View {
                 }
             }
         }
-        .frame(height: 230)
+        .frame(height: 230) 
     }
 }
 
