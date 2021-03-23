@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DE13B82A-2447-44D9-9063-753E489F0CCD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8D8B245-7EF7-46FC-ADBF-638F80205CBF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airality/Network/AriVisualAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "EndPoint"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "C8D8B245-7EF7-46FC-ADBF-638F80205CBF - 7f8d859c5d2da54b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Airality.EndPoint.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;Airality.EndPoint&gt;"
+                  moduleName = "Airality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/justynazarzycka/Documents/Airality/Airality/Network/AriVisualAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "C8D8B245-7EF7-46FC-ADBF-638F80205CBF - 5a6b75492cf84bc8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Airality.EndPoint.rawValue.getter : Swift.String"
+                  moduleName = "Airality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/justynazarzycka/Documents/Airality/Airality/Network/AriVisualAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BBF57FB3-C824-4EC7-8D3E-20E6F7E92DBE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airality/Views/Station/StationMapView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
