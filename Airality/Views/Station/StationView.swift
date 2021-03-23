@@ -35,7 +35,7 @@ struct StationView: View {
                         .frame(height: 25)
                     
                     
-                    Text("  On map")
+                    Text("  On map:")
                         .foregroundColor(.gray)
                     CityMapView(stationCoordinates: stationData.data.location)
                 }
@@ -44,7 +44,8 @@ struct StationView: View {
         }
         
         else {
-            Text("loading")
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle())
         }
     }
 }

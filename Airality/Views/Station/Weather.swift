@@ -17,11 +17,11 @@ struct Weather: View {
                 RectangleBackground()
                 
                 VStack(alignment: .leading){
-                    weatherRow(imageName: "thermometer", text: "\(String(weather.temperature)) °C")
+                    weatherRow(imageName: "thermometer", imageHeight: 35, text: "\(String(weather.temperature)) °C")
                         
-                    weatherRow(imageName: "pressure-gauge", text: "\(String(weather.pressure)) hPa")
+                    weatherRow(imageName: "pressure-gauge",imageHeight: 35, text: "\(String(weather.pressure)) hPa")
                     
-                    weatherRow(imageName: "humidity", text: "\(String(weather.humidity)) %")
+                    weatherRow(imageName: "humidity", text: " \(String(weather.humidity)) %")
                 }
             }
             ZStack {
@@ -32,14 +32,14 @@ struct Weather: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50)
-                        .offset(x: 30, y: 10)
+                        .offset(x: 40, y: 10)
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    weatherRow(imageName: "wind", text: "\(String(weather.windSpeed)) m/s")
+                    weatherRow(imageName: "wind", text: " \(String(weather.windSpeed)) m/s")
                     
-                    weatherRow(imageName: "arrow",imageRotation: -Double(weather.windDirection + 45), text: "\(String(weather.windDirection)) °")
+                    weatherRow(imageName: "arrow",imageRotation: -Double(weather.windDirection + 45), text: " \(String(weather.windDirection)) °")
                 }
             }
         }
@@ -49,6 +49,7 @@ struct Weather: View {
 
 struct weatherRow: View {
     var imageName: String
+    var imageHeight: CGFloat = 30
     var imageRotation: Double = 0
     var text: String
     
@@ -57,7 +58,7 @@ struct weatherRow: View {
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 30)
+                .frame(height: imageHeight)
                 .rotationEffect(.degrees(imageRotation))
             Text(text)
                 

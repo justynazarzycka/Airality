@@ -41,7 +41,7 @@ struct AirQuality: View {
                     Text(station.airQualityLevel.info.description)
                         .padding()
                         .offset(y:-10)
-                        .modifier(FitToWidth(maximumFontSize: 30))
+                        .modifier(FitToWidth(maximumFontSize: 30, lineLimit: 2))
                 }
             }
         }
