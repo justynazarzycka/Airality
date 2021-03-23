@@ -1,6 +1,6 @@
 # Airality
 
-App provading current information about air quality and weather based on your location.
+App providing current information about air quality and weather based on your location.
 
 ![alt text](https://github.com/justynazarzycka/Airality/blob/main/Screenshots/airality.png) 
 
