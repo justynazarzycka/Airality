@@ -1,31 +1,31 @@
 {
     "status": "success",
     "data": {
-        "city": "Borowiec",
-        "state": "Greater Poland",
-        "country": "Poland",
+        "city": "Agra",
+        "state": "Uttar Pradesh",
+        "country": "India",
         "location": {
             "type": "Point",
             "coordinates": [
-                17.0732,
-                52.2768
+                78.00598056,
+                27.19865833
             ]
         },
         "current": {
             "weather": {
-                "ts": "2021-03-16T08:00:00.000Z",
-                "tp": 5,
+                "ts": "2021-03-23T14:00:00.000Z",
+                "tp": 25,
                 "pr": 1011,
-                "hu": 93,
-                "ws": 1.54,
-                "wd": 320,
-                "ic": "02d"
+                "hu": 33,
+                "ws": 6.72,
+                "wd": 16,
+                "ic": "02n"
             },
             "pollution": {
-                "ts": "2021-03-16T07:00:00.000Z",
-                "aqius": 70,
+                "ts": "2021-03-23T14:00:00.000Z",
+                "aqius": 141,
                 "mainus": "p2",
-                "aqicn": 30,
+                "aqicn": 71,
                 "maincn": "p2"
             }
         }
